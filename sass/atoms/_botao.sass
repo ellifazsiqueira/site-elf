@@ -1,9 +1,10 @@
 .botao
-    border: 1px solid $azul
+    border: 2px solid $azul
     border-radius: 10px
     color: $cinza
     text-transform: uppercase
     font-weight: $bold
-    background-color: $azul
-    
-    +transition(3s)
+    &:hover
+        background-color: $azul
+        color: $cinza-claro
+        +transition(.3s)

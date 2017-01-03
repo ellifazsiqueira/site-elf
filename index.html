@@ -19,6 +19,33 @@
             <li><a href="portfolio.html">Portfólio</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
+        <div class="sociais">
+            <div class="icone-behance">
+                <a href="#">
+                    <img src="images/icone-behance.png" alt="">
+                </a>
+            </div>
+            <div class="icone-twitter">
+                <a href="#">
+                    <img src="images/icone-twitter.png" alt="">
+                </a>
+            </div>
+            <div class="icone-facebook">
+                <a href="#">
+                    <img src="images/icone-facebook.png" alt="">
+                </a>
+            </div>
+            <div class="icone-instagram">
+                <a href="#">
+                    <img src="images/icone-instagram.png" alt="">
+                </a>
+            </div>
+            <div class="icone-dribbble">
+                <a href="#">
+                    <img src="images/icone-dribble.png" alt="">
+                </a>
+            </div>
+        </div>
     </nav>
     <div class="layout">
         <!-- Elementos do menu superior, menu responsivo e logo da ELF -->
@@ -59,7 +86,7 @@
                     <div class="texto">
                         <h1>São os pequenos detalhes <br> que fazem grandes empresas.</h1>
                         <br>
-                        <a href="#" class="botao medio">Conheça mais</a>
+                        <a href="sobre.html" class="botao medio">Conheça mais</a>
                     </div>
                     <div class="sociais">
                         <div class="icone-behance">
@@ -102,6 +129,7 @@
             $('.toggle').click(function(){
                 $('.layout').toggleClass('ativo');
                 $('.menu-responsivo').toggleClass('ativo');
+                $('.sociais').toggleClass('ativo');
                 $(this).toggleClass('ativo');
             });
             $('main').click(function(){

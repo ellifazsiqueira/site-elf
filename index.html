@@ -42,7 +42,7 @@
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
-                <a href="javascript" class="toggle">
+                <a class="toggle" href="javascript:;">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -95,5 +95,22 @@
         <footer>
         </footer>
     </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script>
+        $(function(){
+            $('.toggle').click(function(){
+                $('.layout').toggleClass('ativo');
+                $('.menu-responsivo').toggleClass('ativo');
+                $(this).toggleClass('ativo');
+            });
+            $('main').click(function(){
+                $('.layout').removeClass('ativo');
+                $('.menu-responsivo').removeClass('ativo');
+                $(this).removeClass('ativo');
+            })
+            new WOW().init();
+        });
+    </script>
 </body>
 </html>

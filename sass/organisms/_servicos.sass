@@ -1,0 +1,53 @@
+section.servicos
+    .explicativo
+        margin: 25px 0 15px 0
+        +make-sm-column(10)
+        +make-sm-column-offset(1)
+        +breakpoint($celular)
+            margin: 15px 0 0 0
+        
+        .textos
+            p
+                color: $preto
+                +font-size(30px)
+                text-align: justify
+                margin: 0 0 50px
+                +breakpoint($celular)
+                    +font-size(25px)
+                    margin: 0 0 10px
+            h1
+                text-align: center
+                font-weight: $bold
+                +font-size(65px)
+                +breakpoint($celular)
+                    +font-size(40px)
+        .solucoes    
+            +flexbox
+            +align-items(center)
+            +justify-content(space-around)
+            margin-top: 50px
+            +breakpoint($celular)
+                margin-top: 25px 
+            
+            .website,
+            .software,
+            .grafico
+                display: block
+                text-align: center
+                
+    a
+        color: $cinza-escuro
+        +font-size(60px)
+        text-align: center
+        
+        +breakpoint($celular)
+            +font-size(30px)
+        
+        &:hover
+            color: $azul
+    img
+        width: 180px
+        height: 105px
+        +breakpoint ($tablet)
+            width: 90px
+            height: 50px

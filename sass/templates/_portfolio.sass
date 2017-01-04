@@ -7,10 +7,60 @@ body
         attachment: fixed
         size: cover
 
-.construcao
-    margin: 75px auto
-    text-align: center
-    .icone
-        +font-size(200px)
-    h1
-        +font-size(100px)
+.portfolio
+    ul
+        +clearfix
+        +make-row
+        margin: 10px auto 0 auto
+        li
+            +make-sm-column(4)
+            +make-xs-column(8)
+            overflow: hidden
+            margin-bottom: 30px
+            
+            figure
+                position: relative
+                background: $branco
+                
+                &:hover
+                    a
+                        +opacity(1)
+                    .overlay
+                        top: 0
+                        
+                img
+                    +img-responsive
+                    
+                figcaption
+                    a
+                        text-align: center
+                        text-transform: uppercase
+                        position: absolute
+                        z-index: 2
+                        color: $branco
+                        width: 100%
+                        top: 50%
+                        +opacity(0)
+                        
+                        h3
+                            +font-size(22px)
+                            font-weight: $bold
+                            margin: 0
+                            
+                        p
+                            +font-size(18px)
+                            
+                    a,
+                    .overlay
+                        +transition(.3s)
+                            
+                    .overlay
+                        +gradient(60deg, $azul, $cinza-escuro)
+                        +opacity(.8)
+                        position: absolute
+                        left: 0
+                        top: 100%
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%

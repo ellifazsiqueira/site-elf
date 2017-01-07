@@ -7,10 +7,65 @@ body
         attachment: fixed
         size: cover
 
-.construcao
-    margin: 75px auto
-    text-align: center
-    .icone
-        +font-size(200px)
-    h1
-        +font-size(100px)
+section.sobre
+    min-height: 420px
+    .container
+        float: left
+        display: block
+        margin: 15px
+        +make-sm-column(8)
+        
+        .conteudo
+            h2
+                +font-size(25px)
+                font-weight: $bold
+                color: $azul
+                
+            p
+                +font-size(25px)
+                color: $cinza-escuro
+                
+    .laterais
+        float: right
+        margin-top: 45px
+        .lateral-ativo
+            border: 2px solid $azul
+            padding: 15px 200px 25px 60px
+            border-radius: 60px 0 0 60px
+            background-color: $azul
+            h1
+                +font-size(45px)
+                font-weight: $bold
+                color: $cinza-claro
+            &:hover
+                border: 2px solid $azul
+                background-color: $azul
+        
+        .lateral-visao
+            border: 2px solid $cinza-escuro
+            padding: 15px 200px 25px 60px
+            border-radius: 60px 0 0 60px
+            background-color: $cinza-escuro
+            +transition(.3s)
+            h1
+                +font-size(45px)
+                font-weight: $bold
+                color: $cinza-claro
+            &:hover
+                border: 2px solid $azul
+                background-color: $azul
+                
+        
+        .lateral-valores
+            border: 2px solid $cinza-escuro
+            padding: 15px 200px 25px 60px
+            border-radius: 60px 0 0 60px
+            background-color: $cinza-escuro
+            +transition(.3s)
+            h1
+                +font-size(45px)
+                font-weight: $bold
+                color: $cinza-claro
+            &:hover
+                border: 2px solid $azul
+                background-color: $azul

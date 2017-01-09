@@ -25,15 +25,20 @@ section.sobre
                 +font-size(25px)
                 color: $cinza-escuro
                 
+            ul
+                li
+                    +font-size(25px)
+                    color: $cinza-escuro
+                
     .laterais
         float: right
         margin-top: 45px
-        .lateral-ativo
+        .ativo
             border: 2px solid $azul
             padding: 15px 125px 25px 60px
             border-radius: 60px 0 0 60px
             background-color: $azul
-            margin-bottom: 15px
+            margin-bottom: 20px
             h1
                 +font-size(45px)
                 font-weight: $bold
@@ -42,12 +47,12 @@ section.sobre
                 border: 2px solid $azul
                 background-color: $azul
         
-        .lateral-visao
+        .lateral
             border: 2px solid $cinza-escuro
             padding: 15px 125px 25px 60px
             border-radius: 60px 0 0 60px
             background-color: $cinza-escuro
-            margin-bottom: 15px
+            margin-bottom: 20px
             +transition(.3s)
             h1
                 +font-size(45px)
@@ -56,18 +61,4 @@ section.sobre
             &:hover
                 border: 2px solid $azul
                 background-color: $azul
-                
-        
-        .lateral-valores
-            border: 2px solid $cinza-escuro
-            padding: 15px 125px 25px 60px
-            border-radius: 60px 0 0 60px
-            background-color: $cinza-escuro
-            +transition(.3s)
-            h1
-                +font-size(45px)
-                font-weight: $bold
-                color: $cinza-claro
-            &:hover
-                border: 2px solid $azul
                 background-color: $azul

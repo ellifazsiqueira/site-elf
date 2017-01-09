@@ -14,6 +14,10 @@ section.sobre
         display: block
         margin: 15px
         +make-sm-column(7)
+        +breakpoint($tablet)
+            +make-sm-column(12)
+        +breakpoint($celular)
+            +make-sm-column(12)
         
         .conteudo
             h2
@@ -53,7 +57,7 @@ section.sobre
             border-radius: 60px 0 0 60px
             background-color: $cinza-escuro
             margin-bottom: 20px
-            +transition(.3s)
+            +transition(.5s)
             h1
                 +font-size(45px)
                 font-weight: $bold

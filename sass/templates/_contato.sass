@@ -6,3 +6,68 @@ body
         color: $preto
         attachment: fixed
         size: cover
+        
+.contatos
+    .container   
+        .direto
+            display: block
+            float: right
+            .topo
+                text-align: center
+                h2
+                    margin: 30px auto
+                    
+            .telefone,
+            .whatsapp,
+            .email
+                text-align: center
+                margin: 45px auto
+                i
+                    +font-size(55px)
+                    color: $azul
+                    
+        .contato
+            +clearfix
+            +make-sm-column(9)
+            .topo
+                text-align: center
+                h2
+                    margin: 30px auto
+                    
+            form
+                
+                .cols
+                    +make-row
+                    
+                    .col
+                        +make-sm-column(6)
+                        
+                    .textarea,
+                    .assunto
+                        +make-sm-column(12)
+                        
+                    .envio
+                        text-align: center
+                        
+                    input,
+                    select
+                        width: 100%
+                        border: 2px solid $cinza-claro
+                        padding-left: 14px
+                        border-radius: 120px
+                        background-color: $cinza-claro
+                    textarea
+                        width: 100%
+                        border: 2px solid $cinza-claro
+                        padding-left: 7px
+                        border-radius: 15px
+                        background-color: $cinza-claro
+                        margin-bottom: 20px
+                    button
+                        background-color: transparent
+                        display: table
+                        margin: 0 auto
+                        +transition(.2s)
+                            
+                        &:hover
+                            background-color: $azul

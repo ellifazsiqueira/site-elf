@@ -56,18 +56,21 @@ body
                         text-align: center
                         
                     input,
-                    select
-                        width: 100%
-                        border: 2px solid $cinza-claro
-                        padding-left: 14px
-                        border-radius: 120px
-                        background-color: $cinza-claro
+                    select,
                     textarea
                         width: 100%
                         border: 2px solid $cinza-claro
-                        padding-left: 7px
+                        padding-left: 14px
                         border-radius: 15px
                         background-color: $cinza-claro
+                        width: 100%
+                        border: 2px solid $cinza-claro
+                        &:hover
+                            border: 2px solid $azul
+                        &:active
+                            border: 2px solid $azul
+                        
+                    textarea
                         margin-bottom: 20px
                     button
                         background-color: transparent

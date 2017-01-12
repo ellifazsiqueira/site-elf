@@ -12,6 +12,12 @@ body
         .direto
             display: block
             float: right
+            +breakpoint($celular)
+                display: block
+                position: absolute
+                float: inherit
+                +make-sm-column(12)
+                
             .topo
                 text-align: center
                 h2

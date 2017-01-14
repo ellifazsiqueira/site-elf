@@ -19,6 +19,8 @@ section.sobre
             +make-sm-column(12)
         +breakpoint($celular)
             +make-sm-column(12)
+        +breakpoint($fullhd)
+            +make-sm-column(7)
         
         .conteudo
             h2
@@ -30,6 +32,8 @@ section.sobre
                 +font-size(25px)
                 color: $cinza-escuro
                 text-align: justify
+                +breakpoint($fullhd)
+                    +font-size(40px)
                 
             ul
                 li
@@ -45,10 +49,16 @@ section.sobre
             border-radius: 60px 0 0 60px
             background-color: $azul
             margin-bottom: 20px
+            +breakpoint($fullhd)
+                padding: 30px 250px 50px 120px
+                border-radius: 120px 0 0 120px
+                margin-bottom: 40px
             h1
                 +font-size(45px)
                 font-weight: $bold
                 color: $cinza-claro
+                +breakpoint($fullhd)
+                    +font-size(70px)
             &:hover
                 border: 2px solid $azul
                 background-color: $azul
@@ -59,11 +69,17 @@ section.sobre
             border-radius: 60px 0 0 60px
             background-color: $cinza-escuro
             margin-bottom: 20px
+            +breakpoint($fullhd)
+                padding: 30px 250px 50px 120px
+                border-radius: 120px 0 0 120px
+                margin-bottom: 40px
             +transition(.5s)
             h1
                 +font-size(45px)
                 font-weight: $bold
                 color: $cinza-claro
+                +breakpoint($fullhd)
+                    +font-size(70px)
             &:hover
                 border: 2px solid $azul
                 background-color: $azul

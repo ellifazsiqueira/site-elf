@@ -1,7 +1,6 @@
 .habilidades
     .clearfix
     +make-sm-column(12)
-    margin-bottom: 10px
     
     li
         +make-sm-column(6)
@@ -9,6 +8,8 @@
         h2
             font-size: 15px
             margin: 30px 0 10px
+            +breakpoint($fullhd)
+                margin: 30px 0 80px
             
             i
                 font-size: 30px
